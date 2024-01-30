@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Страница предлогает современные курсы по некоторым IT профессиям"
+    />
+    <title>Online Coding School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./images/piton.ico" sizes="any" />
+    <link rel="icon" href="./images/piton.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/piton.png" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/templates.css" />
+    <link rel="stylesheet" href="./style/media.css" />
+  </head>
+  <body>
+    <main class="conteiner">
+      <header class="header" id="header">
+        <a href="#!" class="header__logo-link">
+          <img
+            src="./images/Group 1.png"
+            alt="Логотип компании"
+            class="header__logo-img"
+          />
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li class="header__list-item">
+              <a href="#!" class="header__list-link">Чему вы научитесь</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#!" class="header__list-link">Процесс обучения</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#!" class="header__list-link">Стоимость</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#!" class="header__list-link">Контакты</a>
+            </li>
+
+            <li class="header__list-item header__list-item_end">
+              <a href="#!" class="header__list-link">Регистрация</a>
+            </li>
+            <li class="header__list-item header__list-item_button-style">
+              <a href="#!" class="header__list-link">Войти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menu-btn" id="mobile-nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__navigation_mobile" id="mobile-nav">
+          <button class="test-page__close-button" id="closeNavigation">
+            <img src="./images/close-button.svg" alt="кнопка закрыть тест" />
+          </button>
+          <ul class="header__nav-list_mobile">
+            <li class="header__list-item_mobile">
+              <a href="#!" class="header__list-link_mobile"
+                >Чему вы научитесь</a
+              >
+            </li>
+            <li class="header__list-item_mobile">
+              <a href="#!" class="header__list-link_mobile">Процесс обучения</a>
+            </li>
+            <li class="header__list-item_mobile">
+              <a href="#!" class="header__list-link_mobile">Стоимость</a>
+            </li>
+            <li class="header__list-item_mobile">
+              <a href="#!" class="header__list-link_mobile">Контакты</a>
+            </li>
+
+            <li class="header__list-item_mobile header__list-item_end">
+              <a href="#!" class="header__list-link_mobile">Регистрация</a>
+            </li>
+            <li class="header__list-item_mobile header__list-item_button-style">
+              <a href="#!" class="header__list-link_mobile">Войти</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="catch-cover">
+        <div class="school__cover"></div>
+        <section class="school">
+          <div class="school__content-wrapper">
+            <h1 class="school__title">
+              Школа
+              <span class="school__title_modification">программирования</span>
+              <br />для тех, кому нужны реальные навыки,<br />
+              а не просто сертификат
+            </h1>
+            <p class="school__text">
+              Пройдите тестирование, чтобы получить доступ <br />
+              к бесплатным вводным урокам
+            </p>
+            <button class="button school__lets-test" id="testStartButton">
+              Пройти тестирование
+            </button>
+
+            <div class="test-page__dark-cover" id="testPage">
+              <!-- 1-ая стр. теста -->
+              <article
+                class="test-page__test-panel test-page__test-panel_fist-page"
+                id="articleOne"
+              >
+                <button class="test-page__close-button" id="closeButton">
+                  <img
+                    src="./images/close-button.svg"
+                    alt="кнопка закрыть тест"
+                  />
+                </button>
+                <h2 class="test-page__title">
+                  Перед тем, как приступить к обучению, необходимо пройти
+                  небольшой тест
+                </h2>
+                <p class="test-page__text">
+                  Тест состоит из 4 заданий на логическое мышление и прочие
+                  навыки, необходимые программисту. Задания не самые простые. Но
+                  ни в коем случае не выбирайте ответы наугад. Если вы не можете
+                  дать правильный ответ – выбирайте пункт «Не знаю».
+                </p>
+                <button
+                  class="button test-page__lets-test-button"
+                  id="openFirstPage"
+                >
+                  Начать тест
+                </button>
+              </article>
+
+              <!-- 2-ая стр. теста -->
+              <article
+                class="test-page__test-panel test-page__test-panel_question1"
+                id="articleTwo"
+              >
+                <button
+                  class="test-page__close-button"
+                  id="closeButtonTemplate"
+                >
+                  <img
+                    src="./images/close-button.svg"
+                    alt="кнопка закрыть тест"
+                  />
+                </button>
+                <span class="first-question__sign">ЗАДАНИЕ №1</span>
+                <h2 class="first-question__title" id="change-title">
+                  Правильно! С логикой у вас все отлично
+                </h2>
+                <p class="first-question__text">
+                  Так как 1 пачка макарон стоит 40 рублей, то любое количество
+                  пачек будет стоить четное число рублей. Аналогично с печеньем.
+                  А так как пакетов сока ровно 2, то за сок тоже нужно будет
+                  отдать четное число рублей. Получается, что ни при каких
+                  условиях в результате не может получиться нечетное число 525,
+                  а значит, продавщица действительно пыталась обсчитать Ивана
+                  Ивановича.
+
+                  <span class="first-question__text_bold">
+                    В этом задании проверялось ваше логическое мышление. Это
+                    критически важный навык для любого программиста.
+                  </span>
+                </p>
+                <button class="first-question__button" id="answer">
+                  Далее
+                </button>
+              </article>
+
+              <!-- 3-я стр. теста -->
+              <article
+                class="test-page__test-panel test-page__test-panel_question2"
+                id="articleThree"
+              >
+                <button
+                  class="test-page__close-button"
+                  id="closeButtonTemplate2"
+                >
+                  <img
+                    src="./images/close-button.svg"
+                    alt="кнопка закрыть тест"
+                  />
+                </button>
+                <span class="first-question__sign">ЗАДАНИЕ №1</span>
+                <p class="first-question__text second-question__text">
+                  Иван Иванович купил в магазине у дома несколько пачек макарон
+                  по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета
+                  сока. Продавщица сказала, что с него 525 рублей (скидка не
+                  предусмотрена). Иван Иванович заявил, что его пытаются
+                  обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                </p>
+
+                <form action="" class="question__question-form">
+                  <label class="lable">
+                    <input
+                      type="radio"
+                      class="question__input visualy-hidden"
+                      name="choice"
+                      value="yes"
+                      required
+                    />
+                    <span class="question__pseudo-checkbox"></span>
+                    Да, сумма явно неверная
+                  </label>
+
+                  <label class="lable">
+                    <input
+                      type="radio"
+                      class="question__input visualy-hidden"
+                      name="choice"
+                      value="no"
+                      required
+                    />
+                    <span class="question__pseudo-checkbox"></span>
+                    Нет, такая сумма вполне могла получиться
+                  </label>
+
+                  <label class="lable">
+                    <input
+                      type="radio"
+                      class="question__input visualy-hidden"
+                      name="choice"
+                      value="i dont know"
+                      required
+                    />
+                    <span class="question__pseudo-checkbox"></span>
+                    Не знаю, не получается решить
+                  </label>
+                </form>
+
+                <button
+                  class="first-question__button first-question__button_position-absolute"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Ответить
+                </button>
+              </article>
+            </div>
+          </div>
+          <img
+            class="school__img"
+            src="./images/Layer coding 1.png"
+            alt="картинка: руки ученика над клавиатурой, включенный в работу программист"
+          />
+        </section>
+      </div>
+      <section class="learn-tecnologies">
+        <h2 class="learn-tecnologies__title">Какие технологии вы изучите:</h2>
+        <div class="learn-tecnologies__content-wrapper">
+          <img
+            class="learn-tecnologies__img"
+            src="./images/man-coding.png"
+            alt="Парень сидит за компьютером и изучает информационные технологии с улыбкой на лице"
+          />
+          <div class="learn-tecnologies__items-wrapper">
+            <ul class="learn-tecnologies__list">
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link">
+                  Язык программирования Python
+                </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link"> Сети </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link"> Базы данных </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link">
+                  Фреймворки Flask и Django
+                </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link">
+                  Отладка и тестирование
+                </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link"> Docker </a>
+              </li>
+
+              <li class="learn-tecnologies__item">
+                <a href="#!" class="learn-tecnologies__link"> Git </a>
+              </li>
+            </ul>
+            <p class="learn-tecnologies__text">
+              Это необходимый минимум для современного backend-разработчика
+            </p>
+          </div>
+        </div>
+        <h3 class="learn-tecnologies__about-title">
+          Обучение в YtYt – это удобно и результативно
+        </h3>
+        <ul class="learn-tecnologies__card-list">
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 1.png" alt="" />
+              <h4 class="card-title">Огромное количество практики</h4>
+              <p class="card-text">
+                Более 500 самостоятельных заданий и 20 полноценных больших
+                проектов
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 2.png" alt="" />
+              <h4 class="card-title">Современные методики обучения</h4>
+              <p class="card-text">
+                Спиральное обучение: погружаемся в материал постепенно, виток за
+                витком
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 3.png" alt="" />
+              <h4 class="card-title">Простое и понятное изложение</h4>
+              <p class="card-text">
+                Вместо заумных терминов – примеры из реального мира
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 4.png" alt="" />
+              <h4 class="card-title">Гибкий график занятий</h4>
+              <p class="card-text">
+                Учитесь в любое время в удобном для вас темпе
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 5.png" alt="" />
+              <h4 class="card-title">Прямая связь с опытными программистами</h4>
+              <p class="card-text">
+                Задавайте вопросы и отправляйте свой код на проверку
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 6.png" alt="" />
+              <h4 class="card-title">Оплата небольшими частями</h4>
+              <p class="card-text">
+                Платите только за тот материал, который сейчас изучаете, а не за
+                весь курс сразу
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="learn-tecnologies__card-link">
+              <img class="card-img" src="./images/icon 7 1.png" alt="" />
+              <h4 class="card-title">Быстрый и легкий возврат</h4>
+              <p class="card-text">
+                Если передумаете учиться – вернем деньги за 3 рабочих дня
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="how">
+        <div class="how__cover"></div>
+
+        <h2 class="how__heading">Как происходит обучение на YtYt?</h2>
+        <p class="how__text">
+          Обучение должно быть комфортным. Поэтому мы разработали собственную
+          платформу для обучения программированию. На ней вы можете не только
+          изучать теорию, но и запускать готовые примеры и даже писать свой
+          собственный код.
+        </p>
+        <div class="how__v-box">
+          <iframe
+            class="how__iframe"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Fp4qOGXWKWU?si=nV9Ncc3SWHtXNK-S&amp;start=1664"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <script src="./JS/Script.js"></script>
+  </body>
+</html>
