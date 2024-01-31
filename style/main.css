@@ -121,13 +121,13 @@ body {
   color: #FFF;
 }
 
-.header__list-item_button-style:focus-within   {
-  outline: 4px solid #000;
-  outline-offset: 3px;
-}
-
 .header__list-item_button-style .header__list-link:focus-visible {
   outline: none;
+}
+
+.header__list-item_button-style:has(:focus) {
+  outline: 4px solid #000;
+  outline-offset: 3px;
 }
 
 .header__list-item_button-style {
@@ -190,7 +190,6 @@ body {
   right: 0;
   height: 100%;
   background-image: url(../images/header-image-big.png);
-  object-fit: cover;
   background-size: cover;
   overflow: visible;
   background-repeat: no-repeat;
