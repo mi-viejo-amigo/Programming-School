@@ -41,7 +41,7 @@ body {
   width: 18px;
   height: 18px;
   background-image: url(../images/arrow\ 2.svg);
-  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 
 }
@@ -196,7 +196,7 @@ body {
   left: 190px;
   right: 0;
   height: 100%;
-  background-image: url(../images/header-image-big.png);
+  background-image: url(../images/new-svg/First-cover.svg);
   background-size: cover;
   overflow: visible;
   background-repeat: no-repeat;

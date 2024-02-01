@@ -32,6 +32,15 @@
     text-align: center;
   }
 
+  .test-page__test-panel {
+    margin: auto 20px;
+
+  }
+
+  .test-page__test-panel_fist-page {
+    padding: 35px 50px 24px;
+  }
+
   .learn-tecnologies__img {
     display: none;
   }
@@ -166,10 +175,70 @@
     height: 15px;
   }
 
+  .test-page__title {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  
+  .test-page__text {
+    font-size: 12px;
+    line-height: 100%;
+    margin: 14px 0 12px;
+  }
+
+  .test-page__lets-test-button {
+    padding: 15px 30px 15px 22px;
+  }
+
   .learn-tecnologies__title {
     font-size: 24px;
     line-height: 108%;
   }
+
+  .test-page__test-panel_fist-page .button::after {
+    right: 11px;
+    top: 20px;
+    width: 13px;
+    height: 13px;
+  }
+
+  .first-question__button_position-absolute {
+    right: 11px;
+    bottom: 11px;
+}
+
+.question__question-form {
+  gap: 8px;
+  font-size: 10px;
+  line-height: 120%;
+}
+
+  .second-question__text {
+    margin: 15px 0 20px;
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .first-question__title {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .first-question__text {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .first-question__text_bold {
+    font-size: 13px;
+    line-height: 120%;
+  }
+
+  .test-page__test-panel_question2 {
+    padding: 28px 50px 30px 30px;
+    text-wrap: balance;
+    
+}
 
   .learn-tecnologies__about-title {
     font-size: 24px;
