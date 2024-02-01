@@ -98,6 +98,10 @@ body {
   margin-right: 41px;
 }
 
+.header__list-item_button-style .header__list-link  {
+  color: #FFF;
+}
+
 .header__list-link {
   color: #22253B;
   text-align: center;
@@ -108,17 +112,20 @@ body {
   line-height: 104.4%;
 }
 
-.header__list-link:hover {
+/* Тут у нас какие-то проблемы с выделением текста цветом по ховеру */
+
+.header__list-item:last-child .header__list-link {
+  color: #fff;
+}
+
+.header__list-item:not(:last-child):hover .header__list-link {
   color: #F15525;
 }
+
 
 .header__list-item_end {
   margin-left: auto;
 
-}
-
-.header__list-item_button-style .header__list-link  {
-  color: #FFF;
 }
 
 .header__list-item_button-style .header__list-link:focus-visible {
@@ -399,6 +406,11 @@ body {
   
 }
 
+/* .li__flex-grow-test {
+  flex-grow: 1;
+  flex-shrink: 1;
+} */
+
 .learn-tecnologies__card-link {
   display: block;
   width: 269px;
@@ -406,7 +418,6 @@ body {
   padding: 50px 35px 31px;
   border-radius: 30px;
   background: #EAF2F5;
-
   color: #22253B;
   text-align: center;
   font-family: Raleway, sans-serif;
@@ -438,6 +449,16 @@ body {
 .test-page__dark-cover {
   position: fixed;
   z-index: 10;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(25, 26, 38, 0.90) 0%, rgba(25, 26, 38, 0.90) 100%);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+}
+
+.test-page__dark-cover_nav {
+  position: fixed;
+  z-index: 2;
   inset: 0;
   background: linear-gradient(0deg, rgba(25, 26, 38, 0.90) 0%, rgba(25, 26, 38, 0.90) 100%);
   display: none; 

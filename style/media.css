@@ -112,11 +112,8 @@
     line-height: 100%;
   }
 
-  .header__list-link_mobile:hover {
-    background-color: #f15525;
-  }
-
-  .header__list-link_mobile:last-child {
+  .header__list-link_mobile:not(.header__list-item_mobile:last-child .header__list-link_mobile):hover {
+    color: #f15525;
   }
 
   .header__list-item_end {
@@ -156,9 +153,17 @@
   }
 
   .school__lets-test {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 96.688%;
     letter-spacing: -0.54px;
+    padding: 20px 45px 20px 30px
+  }
+
+  .school__lets-test::after {
+    top: 22px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
   }
 
   .learn-tecnologies__title {
@@ -174,6 +179,7 @@
   .card-title {
     font-size: 12px;
     line-height: 100%;
+    margin: 10px 0 6px;
   }
 
   .card-text {
@@ -190,9 +196,5 @@
     height: 175px;
     padding: 24px 9px 20px;
   }
-
-  .card-img {
-    width: 40px;
-    height: 40px;
-  }
+  
 }

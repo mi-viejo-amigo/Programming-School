@@ -1,5 +1,7 @@
 window.addEventListener("load", function () {
   // Переменные для кнопок и темплейтов
+  
+  let darkCoverNav = document.getElementById("dark-cover-nav");
   let openButton = document.getElementById("testStartButton");
   let testPage = document.getElementById("testPage");
   let openFirstPage = document.getElementById("openFirstPage");
@@ -67,17 +69,21 @@ window.addEventListener("load", function () {
   // МЕНЮ БУРГЕР МОБИЛЬНОЙ ВЕРСИИ ЗАКРЫВАЕТСЯ ПРИ РАСШИРЕНИИ ЭКРАНА !!!
   navBtn.addEventListener("click", function () {
     mobileNav.style.display = "flex";
+    darkCoverNav.style.display = "flex";
   });
 
   function toggleDisplay() {
     var maxWidth = 1000; // Максимальная ширина, при которой элемент будет скрыт
     if (window.innerWidth <= maxWidth) {
+      darkCoverNav.style.display = "none";
       mobileNav.style.display = "none"; // Скрываем элемент при узком экране
     } if (closeNav) {
       closeNav.addEventListener("click", function () {
+        darkCoverNav.style.display = "none";
         mobileNav.style.display = "none";
       })
     } else {
+      darkCoverNav.style.display = "";
       mobileNav.style.display = ""; // Восстанавливаем стандартное значение display
     }
   }
@@ -101,6 +107,7 @@ window.addEventListener("load", function () {
     });
     // 4
     closeNav.addEventListener("click", function () {
+      darkCoverNav.style.display = "none";
       mobileNav.style.display = "none";
       header.style.display = "flex";
     });
