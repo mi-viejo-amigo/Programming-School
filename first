@@ -1,0 +1,29 @@
+[33mcommit e42ef61b9eff84a5194396f656162eeb99b241cc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: FROL <nkt.frlv7@yandex.ru>
+Date:   Thu Feb 1 09:15:05 2024 +0100
+
+    dark-cover open-nav fixed
+
+[33mcommit 9e9f04af42c649b938729b53ff92d6a765a82fd2[m
+Author: FROL <nkt.frlv7@yandex.ru>
+Date:   Wed Jan 31 10:07:06 2024 +0100
+
+    исправил изменение картинок при ресайзе
+
+[33mcommit 30885d5e32419f78ed250da2d5be6dae72b24f40[m
+Author: FROL <nkt.frlv7@yandex.ru>
+Date:   Tue Jan 30 15:54:27 2024 +0100
+
+    поменял мэйн на индекс
+
+[33mcommit 9a20acd6e44737efd51459e5b6633d3702400fe7[m
+Author: FROL <nkt.frlv7@yandex.ru>
+Date:   Tue Jan 30 10:02:05 2024 +0100
+
+    lets this commit
+
+[33mcommit 019e00e10b1fba7c37f8f49a0ca9e005bf958316[m
+Author: Nikita <152717661+mi-viejo-amigo@users.noreply.github.com>
+Date:   Tue Jan 30 09:54:47 2024 +0100
+
+    Initial commit
